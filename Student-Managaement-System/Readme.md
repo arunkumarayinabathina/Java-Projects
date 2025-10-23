@@ -60,7 +60,9 @@ The app allows you to **add, view, update, and delete students** with **persiste
 
 ![View Students Page](./assets/liststudents.png)
 
----
+#### **Searching and Sorting(Added it later.)**
+
+## ![View Students Page](./assets/sortandsearch.png)
 
 ## **Project Structure**
 
@@ -94,7 +96,7 @@ StudentManagementWeb/
 
 2. Run on **Tomcat server**.
 
-3. Compile the java files. 
+3. Compile the java files.
 
 4. Add the WEB_INF(folder),student.dat,jsp files inside the WebContent folder inside the webpages located in the tomcat.
 

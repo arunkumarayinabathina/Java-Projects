@@ -25,4 +25,21 @@
         <servlet-name>DeleteStudentServlet</servlet-name>
         <url-pattern>/DeleteStudentServlet</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SortStudentServlet</servlet-name>
+        <servlet-class>servlet.SortStudentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SortStudentServlet</servlet-name>
+        <url-pattern>/SortStudentServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>SearchStudentServlet</servlet-name>
+        <servlet-class>servlet.SearchStudentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SearchStudentServlet</servlet-name>
+        <url-pattern>/SearchStudentServlet</url-pattern>
+    </servlet-mapping>
 </web-app>

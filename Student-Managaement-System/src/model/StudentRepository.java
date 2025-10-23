@@ -76,6 +76,21 @@ public class StudentRepository {
         saveStudents(students);
     }
 
+    public static List<Student> searchStudents(String keyword) {
+        List<Student> students = loadStudents();
+        if (keyword == null || keyword.trim().isEmpty()) {
+            return students;
+        }
+        String key = keyword.trim().toLowerCase();
+        List<Student> result = new ArrayList<>();
+        for (Student s : students) {
+            if (String.valueOf(s.getId()).contains(key) || s.getName().toLowerCase().contains(key)) {
+                result.add(s);
+            }
+        }
+        return result;
+    }
+
     public static void deleteStudent(int id) {
         List<Student> students = loadStudents();
         students.removeIf(s -> s.getId() == id);
